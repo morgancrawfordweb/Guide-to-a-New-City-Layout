@@ -1,0 +1,187 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+li{
+  padding: 1rem 0;
+}
+
+object.salePrice{
+  color: red;
+}
+h1{
+  display: flex;
+  justify-content: center;
+  
+}
+
+main{
+  border:2px red solid
+}
+
+header span{
+  color: red;
+    display: inline;
+  padding: 5px 40% 0 5% ;
+}
+header ul{
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  align-items: center;
+}
+header li{
+  display: inline-flex;
+  padding: 0 3%;
+}
+
+header ul a{
+  margin-left: 5%;
+}
+
+.sign{
+  display: inline-flex;
+  color: black;
+  border: solid 2px red;
+  width: 125px;
+  justify-content: center;
+}
+
+#signUp{
+  background-color: black;
+  color: white;
+}
+
+#wholeGuide{
+  display: inline-flex;
+  margin: 5% 15%;
+}
+
+#guide{
+  padding: 0 10%;
+  width: 50%;
+}
+#image{
+  padding: 0 5%;
+  width: 50%;
+}
+
+#image img{
+  width: 600px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#whatWeDo{
+  display: inline-flex;
+  width: 100%
+}
+#whatWeDo li{
+  list-style-type: none;
+  width: 25%;
+  padding: 0 5%;
+}
+#wholeGuide img{
+  max-width: 100%;
+  height:auto;
+}
+
+#aboutSection{
+  width: 100%;
+  display: flex;
+}
+#aboutImage{
+  width: 50%;
+  background-color: lightcoral;
+  display: flex;
+}
+#aboutImage img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+}
+#learn{
+  width: 50%;
+  background-color: lightblue;
+  
+}
+#learn span{
+  display: flex;
+}
+#learn ul{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+#learn i{
+  background-color: lightcoral;
+  line-height: normal;
+  border-radius: 10px;
+}
+#additionalInfo{
+  display: flex;
+  background-color: lightcoral;
+}
+
+/* Media screen for mobile */
+@media screen and (max-width: 545px){
+  #wholeGuide{
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 100%;
+  }
+  #guide{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #guide a{
+    font-size: 1.5rem;
+  }
+  
+  #image{
+    margin: 0 10%;
+    padding: 5%;
+    width: 80%;
+    display: inline-flex;
+    justify-self: center;
+  }
+  #whatWeDo{
+    padding: 0;
+  }
+}
+
+
+/* This is for the mobile apps just changing from horizontal to vertical */
+@media screen and (max-width: 485px){
+  #whatWeDo{
+    display: flex;
+    flex-direction: column;
+  }
+  #whatWeDo li{
+    display: flex;
+    padding: 4%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+}
+
